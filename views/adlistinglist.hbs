@@ -1,0 +1,134 @@
+<html lang="en">
+
+  {{>header}}
+  <body>
+
+    <header id="header-wrap">
+
+      {{>link}}
+    </header>
+
+    <div class="page-header" style="background: url(assets/img/banner1.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+              <h2 class="product-title">Listings</h2>
+              <ol class="breadcrumb">
+                <li><a href="#">Home /</a></li>
+                <li class="current">Listings</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container section-padding">
+      <div class="container">
+        <div class="row">
+            <div class="adds-wrapper">
+              <div class="tab-content">
+                <div id="list-view" class="tab-pane fade active show">
+                  <div class="row">
+                    {{#each allProduct}}
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="featured-box">
+                    <figure>
+                      <div class="image-left">
+                        <a href="#">
+                          <img
+                            class="img-fluid"
+                            src="{{display}}"
+                            alt="{{title}}"
+                          />
+                        </a>
+                      </div>
+                    </figure>
+                    <div class="feature-content">
+                      <div class="product">
+                        <a href="#">{{category}} ></a>
+                        <a href="#">{{brand}}</a>
+                      </div>
+                      <h4><a href="ads-details.html">{{title}}</a></h4>
+                      <div class="meta-tag">
+                        <span>
+                          <a href="#"><i class="lni-user"></i>
+                            {{name}}</a>
+                        </span>
+                        <span>
+                          <a href="#"><i class="lni-map-marker"></i>
+                            {{country}}</a>
+                        </span>
+                        <span>
+                          <a href="#"><i class="lni-tag"></i>
+                            {{condition}}</a>
+                        </span>
+                      </div>
+                      <p class="dsc">{{message}}</p>
+                      <div class="listing-bottom">
+                        <h3 class="price float-left">{{price}}</h3>
+                        <a
+                          href="ads-details.html"
+                          class="btn btn-common float-right"
+                        >View Details</a>
+                      </div>
+                    </div>
+                  </div>
+                    </div>
+                    {{/each}}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pagination-bar">
+              <nav>
+                <ul class="pagination justify-content-center">
+                  <li class="page-item"><a
+                      class="page-link active"
+                      href="#"
+                    >1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a
+                      class="page-link"
+                      href="#"
+                    >Next</a></li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {{>footer}}
+    <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+    </a>
+
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+
+    <script
+      data-cfasync="false"
+      src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script><script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/color-switcher.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/summernote.js"></script>
+  </body>
+
+</html>
